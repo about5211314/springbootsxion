@@ -1,15 +1,9 @@
-# Divinegon
+# 0 Divinegon
+
 Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭建一套基础应用平台，包括：组织、用户、角色、权限、菜单、数据字典管理、自定义表单以及工作流特性
 
-# 0 前端项目
-
-## 浏览器：
-- (待定)
-
-## 客户端：
-- (待定)
-
 本项目计划采用：
+
 >框架：SpringBoot 2.2.1
 
 >持久层：MyBatisPlus 3.1.2 
@@ -25,8 +19,6 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 >api文档自动生成：showdoc 
 
 # 1 模块解释
-
-
 
 ## springboot-api
 
