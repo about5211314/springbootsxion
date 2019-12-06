@@ -4,10 +4,10 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 # 前端项目
 
 ## 浏览器：
-- [Divinegon-admin](https://github.com/about5211314/Divinegon-admin)
+- (待定)
 
 ## 客户端：
-- [Divinegon-cadmin](https://github.com/about5211314/Divinegon-cadmin)
+- (待定)
 
 本项目计划采用：
 >框架：SpringBoot 2.2.1
