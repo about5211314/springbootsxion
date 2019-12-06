@@ -12,7 +12,7 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 本项目计划采用：
 >框架：SpringBoot 2.2.1
 
->持久层框架：MyBatisPlus 3.1.2 
+>持久层：MyBatisPlus 3.1.2 
 
 >数据库：MySQL 5.7
 
