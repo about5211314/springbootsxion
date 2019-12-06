@@ -12,19 +12,35 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 本项目计划采用：
 >框架：SpringBoot 2.2.1
 
-## springboot-core集成
->持久层框架中：MyBatisPlus 3.1.2 
+>持久层框架：MyBatisPlus 3.1.2 
 
 >数据库：MySQL 5.7
 
 >认证与权限：shiro 1.4.0
 
-## springboot-activiti集成
 >流程：activiti 6.0 和 在线流程编辑器
 
 >自定义表单：vue-formbuilder
  
 >api文档自动生成：showdoc 
+
+# 模块解释
+
+## springboot-api
+
+>接口服务
+
+## springboot-activiti
+
+>流程服务
+
+## springboot-core
+
+>核心服务
+
+## springboot-tils
+
+>工具服务
 
 
 # 发展状况
