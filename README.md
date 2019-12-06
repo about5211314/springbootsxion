@@ -32,43 +32,43 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 ## 一期
 >2019.9.10   项目启动
 
->2019.9.15   关联showdoc               已完成 
+>2019.9.15   - [x] 完成任务关联showdoc               已完成 
 
->2019.9.20   集成SpringBoot            已完成 
+>2019.9.20   - [x] 集成SpringBoot            已完成 
    
->2019.9.20   集成MyBatisPlus、MySQL     已完成
+>2019.9.20   - [x] 集成MyBatisPlus、MySQL     已完成
 
      >>通过CodeGenerator类，自动生成entity、mapper、service
      >>规则：输入模块名称，然后输入表名，自动生成在com.core.springbootcore下
 
->2019.11.12  集成shiro                 已完成
+>2019.11.12  - [x] 集成shiro                 已完成
 
      >>密码通过md5两次加密验证
      
      >>通过权限表进行控制
 
->2019.11.10  集成activiti              已完成
+>2019.11.10  - [x] 集成activiti              已完成
 
      >>core集成springboot-activiti.jar
 
->2019.12.x   集成vue-formbuilder       设计中
+>2019.12.x   - [ ]集成vue-formbuilder       设计中
 
 ## 二期
->组织管理 待启动
+>- [ ]组织管理 
 
->用户管理 待启动
+>- [ ]用户管理 
 
->角色管理 待启动
+>- [ ]角色管理 
 
->权限管理 待启动
+>- [ ]权限管理 
 
->菜单管理 待启动
+>- [ ]菜单管理 
 
->数据字典管理 待启动
+>- [ ]数据字典管理 
 
->自定义表单管理 待启动
+>- [ ]自定义表单管理 
 
->工作流管理 待启动
+>- [ ]工作流管理 
 
 
 
