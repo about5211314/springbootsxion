@@ -42,7 +42,7 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/springboot-core/src/main/java");
-        gc.setAuthor("shenl");
+        gc.setAuthor("zhuwei");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
         mpg.setGlobalConfig(gc);
@@ -51,7 +51,7 @@ public class CodeGenerator {
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://127.0.0.1:3306/oa?characterEncoding=utf8&serverTimezone=UTC");
         // dsc.setSchemaName("public");
-        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
+        dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
         mpg.setDataSource(dsc);
@@ -96,6 +96,21 @@ public class CodeGenerator {
             }
         });
         */
+        // 自定义controller的代码模板
+        templatePath = "/templates/controller.java.ftl";
+        // 自定义输出配置
+      //  List<FileOutConfig> focList = new ArrayList<>();
+        // 自定义配置会被优先输出
+        focList.add(new FileOutConfig(templatePath) {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
+                return projectPath + "/springboot-core/src/main/java/com/core/springbootcore/" + pc.getModuleName()+"/controller"
+                        + "/" + tableInfo.getEntityName() + "Controller" + StringPool.DOT_JAVA;
+            }
+        });
+
+
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 

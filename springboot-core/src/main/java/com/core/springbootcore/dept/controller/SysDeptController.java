@@ -35,46 +35,49 @@ public class SysDeptController {
 
     /**
      * 添加数据
+     *
      * @param sysDept
      * @return
      */
     @RequiresPermissions("sys:dept:add")
     @ResponseBody
     @RequestMapping("/insert")
-    public int insert (SysDept sysDept){
+    public int insert(SysDept sysDept) {
         return sysDeptMapper.insert(sysDept);
     }
 
 
-
     /**
      * 删除
+     *
      * @param deptId
      * @return
      */
     @RequiresPermissions("sys:dept:del")
     @ResponseBody
     @RequestMapping("/remove")
-    public int remove(Integer deptId){
+    public int remove(Integer deptId) {
         return sysDeptMapper.deleteById(deptId);
     }
 
 
     /**
      * 修改
+     *
      * @param sysDept
      * @return
      */
     @RequiresPermissions("sys:dept:update")
     @ResponseBody
     @RequestMapping("/update")
-    public int update(SysDept sysDept){
+    public int update(SysDept sysDept) {
         return sysDeptMapper.updateById(sysDept);
     }
 
 
     /**
      * 查询
+     *
      * @param current size
      * @return
      */
@@ -89,7 +92,7 @@ public class SysDeptController {
         LambdaQueryWrapper<SysDept> wrapper = new LambdaQueryWrapper<>();
 
         try {
-            page = sysDeptMapper.selectPage( page, wrapper) ;
+            page = sysDeptMapper.selectPage(page, wrapper);
             System.out.println(page);
         } catch (Exception e) {
             e.printStackTrace();
