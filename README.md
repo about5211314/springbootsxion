@@ -50,6 +50,7 @@ Divinegon的目标是借助springboot的开发框架与activiti流程引擎搭�
 
      >>通过CodeGenerator类，自动生成entity、mapper、service
      >>规则：输入模块名称，然后输入表名，自动生成在com.core.springbootcore下
+     >>完成自定义模版，一键生成接口和增删改查方法（增加模块只需要建表即可完成，节省时间）
 
 >2019.11.12  集成shiro                 已完成
 

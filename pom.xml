@@ -15,6 +15,7 @@
         <module>springboot-utils</module>
         <module>springboot-core</module>    <!-- 核心模块 -->
         <module>springboot-activiti</module>
+        <module>springboot-elasticsearch</module>
     </modules>
 
 
