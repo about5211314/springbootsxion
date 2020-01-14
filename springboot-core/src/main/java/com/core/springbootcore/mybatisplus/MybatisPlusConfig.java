@@ -2,7 +2,7 @@ package com.core.springbootcore.mybatisplus;
 
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
+//import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,13 +19,13 @@ public class MybatisPlusConfig {
      * @author fxbin
      * @return com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
      */
-    @Bean
-    @Profile({"dev", "staging"})
-    public PerformanceInterceptor performanceInterceptor(){
-
-        //启用性能分析插件, SQL是否格式化 默认false,此处开启
-        return new PerformanceInterceptor().setFormat(true);
-    }
+//    @Bean
+//    @Profile({"dev", "staging"})
+//    public PerformanceInterceptor performanceInterceptor(){
+//
+//        //启用性能分析插件, SQL是否格式化 默认false,此处开启
+//        return new PerformanceInterceptor().setFormat(true);
+//    }
 
 
     /**

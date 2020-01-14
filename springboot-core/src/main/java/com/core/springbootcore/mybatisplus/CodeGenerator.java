@@ -1,5 +1,6 @@
 package com.core.springbootcore.mybatisplus;
 
+import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -48,12 +49,21 @@ public class CodeGenerator {
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
+//        DataSourceConfig dsc = new DataSourceConfig();
+//        dsc.setUrl("jdbc:CodeGeneratorDm://127.0.0.1:3306/oa?characterEncoding=utf8&serverTimezone=UTC");
+//        // dsc.setSchemaName("public");
+//        dsc.setDriverName("com.CodeGeneratorDm.jdbc.Driver");
+//        dsc.setUsername("root");
+//        dsc.setPassword("root");
+//        mpg.setDataSource(dsc);
+        //达梦数据库的配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/oa?characterEncoding=utf8&serverTimezone=UTC");
-        // dsc.setSchemaName("public");
-        dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setDbType(DbType.DM);
+        dsc.setSchemaName("SWZHBGXT");
+        dsc.setUrl("jdbc:dm://192.168.0.40:5236/SWZHBGXT");
+        dsc.setDriverName("dm.jdbc.driver.DmDriver");
+        dsc.setUsername("SWZHBGXT");
+        dsc.setPassword("SWZHBGXT123456");
         mpg.setDataSource(dsc);
 
         // 包配置
@@ -98,8 +108,6 @@ public class CodeGenerator {
         */
         // 自定义controller的代码模板
         templatePath = "/templates/controller.java.ftl";
-        // 自定义输出配置
-      //  List<FileOutConfig> focList = new ArrayList<>();
         // 自定义配置会被优先输出
         focList.add(new FileOutConfig(templatePath) {
             @Override
